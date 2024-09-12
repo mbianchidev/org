@@ -1,312 +1,395 @@
 teams:
-  bom-admins:
-    description: admin access to the bom repo
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      bom: admin
-  bom-maintainers:
-    description: write access to the bom repo
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      bom: write
-  downloadkubernetes-admins:
-    description: admin access to downloadkubernetes
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      downloadkubernetes: admin
-  downloadkubernetes-maintainers:
-    description: write access to downloadkubernetes
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      downloadkubernetes: write
-  mdtoc-admins:
-    description: admin access to mdtoc
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      mdtoc: admin
-  mdtoc-maintainers:
-    description: write access to mdtoc
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      mdtoc: write
-  obscli-admins:
-    description: admin access to obscli
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    - Verolop # subproject owner
-    privacy: closed
-    repos:
-      obscli: admin
-  obscli-maintainers:
-    description: write access to obscli
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    - Verolop # subproject owner
-    privacy: closed
-    repos:
-      obscli: write
-  promo-tools-admins:
-    description: admin access to promo-tools
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner / maintainer
-    - listx # maintainer
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    - Verolop # subproject owner / Release Manager
-    privacy: closed
-    previously:
-    - image-promoter-admins
-    - k8s-container-image-promoter-admins
-    repos:
-      promo-tools: admin
-  promo-tools-maintainers:
-    description: write access to promo-tools
+  milestone-maintainers:
+    description: Contributors who can use `/milestone` or `/status` commands on
+      issues/PRs and have triage access to the kubernetes/enhancements repo
     maintainers:
+    - MadhavJivrajani # ContribEx
     - palnabarun # Release Manager
+    - Priyankasaggu11929 # ContribEx
     members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner / maintainer
-    - listx # maintainer
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    - Verolop # subproject owner / Release Manager
+    - adisky # OpenStack
+    - ahg-g # Scheduling
+    - alculquicondor # Scheduling
+    - ameukam # Release Manager Associate / K8s Infra
+    - andrewsykim # Cloud Provider
+    - aojea # Testing / Network
+    - aravindhp # Windows
+    - ardaguclu # CLI
+    - BenTheElder # Testing / K8s Infra
+    - bgrant0607 # Architecture
+    - brancz # Instrumentation
+    - bridgetkromhout # Cloud Provider
+    - cantbewong # VMware
+    - caseydavenport # Network
+    - chanieljdan # 1.32 Docs Lead
+    - cheftako # Cloud Provider
+    - cici37 # Release Manager
+    - claudiubelu # Windows
+    - cpanato # Release Manager
+    - craiglpeters # Azure
+    - danwinship # Network
+    - dashpole # Instrumentation
+    - dcbw # Network
+    - dchen1107 # Node
+    - deads2k # API Machinery / Auth
+    - derekwaynecarr # Architecture / Node
+    - dgrisonnet # Instrumentation
+    - dims # Architecture / K8s Infra
+    - drewhagen # 1.32 Release Signal Lead
+    - eddiezane # CLI
+    - ehashman # Instrumentation
+    - elmiko # Cloud Provider
+    - enj # Auth
+    - fabriziopandini # Cluster Lifecycle
+    - feiskyer # Azure
+    - floreks # UI
+    - frapposelli # VMware
+    - fsmunoz # 1.32 Release Lead
+    - gjtempleton # Autoscaling
+    - gracenng # Release Manager Associate / 1.30 RT EA
+    - haircommander # Node
+    - Huang-Wei # Scheduling
+    - janetkuo # Apps
+    - jayunit100 # Windows
+    - jberkus # Release
+    - jbpratt # Testing
+    - jdumars # Architecture / PM
+    - jeremyrickard # Release
+    - jimangel # Docs / Release Manager Associate / 1.32 Release Branch Manager
+    - johnbelamaric # Architecture
+    - jpbetz # API Machinery
+    - jrsapi # Release Manager Associate
+    - jsafrane # Storage
+    - jsturtevant # Windows
+    - justaugustus # Release
+    - justinsb # AWS / Cluster Lifecycle
+    - k8s-release-robot # Release
+    - katcosgrove # v1.32 EA
+    - khenidak # Azure
+    - kow3ns # Apps
+    - lavalamp # API Machinery
+    - liggitt # Auth / Release
+    - lingxiankong # OpenStack
+    - logicalhan # Instrumentation
+    - luxas # Cluster Lifecycle
+    - maciaszczykm # UI
+    - maciekpytel # Autoscaling
+    - marosset # Windows
+    - mbianchidev # 1.32 Comms Lead
+    - mborsz # Scalability
+    - michelle192837 # Testing
+    - mickeyboxell # 1.32 Release Manager Shadow
+    - mikedanese # Auth
+    - mikezappa87 # Network
+    - mm4tt # Scalability
+    - mpuckett159 # CLI
+    - mrunalp # Node
+    - msau42 # Storage
+    - nckturner # AWS
+    - neolit123 # Cluster Lifecycle
+    - npolshakova # 1.32 Release Lead Shadow
+    - pacoxu # Cluster Lifecycle
+    - pmorie # Multicluster
+    - pohly # SIG Testing, Instrumentation, Node
+    - puerco # Release Manager
+    - quinton-hoole # Multicluster
+    - RainbowMango # Instrumentation
+    - rexagod # Instrumentation
+    - ritazh # Auth
+    - saad-ali # Storage
+    - salaxander # Release Manager Associate / 1.29 RT EA
+    - salehsedghpour # 1.32 Release Lead Shadow
+    - saschagrunert # Release
+    - SataQiu # Cluster Lifecycle
+    - satyampsoni # 1.32 Release Notes Lead
+    - serathius # Instrumentation
+    - SergeyKanzhelev # Node
+    - shaneutt # Network
+    - shu-mutou # UI
+    - shyamjvs # Scalability
+    - soltysh # CLI
+    - spzala # IBM Cloud
+    - sreeram-venkitesh # 1.32 Release Lead Shadow
+    - sttts # API Machinery
+    - tallclair # Auth
+    - tashimi # Usability
+    - thockin # Network
+    - timothysc # Cluster Lifecycle / Testing
+    - tjons # 1.32 Enhancements Lead
+    - upodroid # K8s Infra
+    - Verolop # Release Manager
+    - Vyom-Yadav # 1.32 Release Lead Shadow
+    - wojtek-t # Scalability
+    - xing-yang # Storage
+    - xmcqueen # Testing
     - xmudrii # Release Manager
     privacy: closed
     previously:
-    - image-promoter-maintainers
-    - k8s-container-image-promoter-maintainers
+    - kubernetes-milestone-maintainers
     repos:
-      promo-tools: write
-  release-actions-admins:
-    description: admin access to the release-actions repo
-    members:
-    - cpanato
-    - jeremyrickard
-    - justaugustus
-    - puerco
-    - saschagrunert
-    - Verolop
-    privacy: closed
-    repos:
-      release-actions: admin
-  release-actions-maintainers:
-    description: write access to the release-actions repo
-    members:
-    - cpanato
-    - jeremyrickard
-    - justaugustus
-    - puerco
-    - saschagrunert
-    - Verolop
-    privacy: closed
-    repos:
-      release-actions: write
-  release-engineering:
-    description: Members of the Release Engineering subproject, including
-      Release Managers and Release Manager Associates.
+      enhancements: write
+  publishing-bot-admins:
+    description: Admin access to the publishing-bot repo
     maintainers:
-    - palnabarun # Release Manager
-    members:
-    - ameukam # Release Manager Associate
-    - cpanato # subproject owner / Release Manager
-    - jeremyrickard # subproject owner
-    - jimangel # Release Manager Associate
-    - justaugustus # subproject owner / Release Manager
-    - puerco # subproject owner / Release Manager
-    - saschagrunert # subproject owner / Release Manager
-    - Verolop # subproject owner / Release Manager
-    - xmudrii # Release Manager
-    privacy: closed
-    repos:
-      promo-tools: triage
-  release-notes-admins:
-    description: admin access to release-notes
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      release-notes: admin
-  release-notes-maintainers:
-    description: write access to release-notes
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      release-notes: write
-  release-sdk-admins:
-    description: admin access to release-sdk
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      release-sdk: admin
-  release-sdk-maintainers:
-    description: write access to release-sdk
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      release-sdk: write
-  release-team-shadow-stats-admins:
-    description: admin access to release-team-shadow-stats
+    - nikhita
     members:
     - cpanato
+    - dims
     - jeremyrickard
     - justaugustus
     - puerco
     - saschagrunert
+    - sttts
     privacy: closed
+    previously:
+    - publishing-bot-reviewers
     repos:
-      release-team-shadow-stats: admin
-  release-utils-admins:
-    description: admin access to release-utils
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      release-utils: admin
-  release-utils-maintainers:
-    description: write access to release-utils
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      release-utils: write
-  tejolote-admins:
-    description: admin access to tejolote
+      publishing-bot: admin
+  publishing-bot-maintainers:
+    description: Write access to the publishing-bot repo
+    maintainers:
+    - nikhita
+    - palnabarun
     members:
     - cpanato
+    - dims
     - jeremyrickard
     - justaugustus
     - puerco
     - saschagrunert
+    - sttts
+    - Verolop
+    - xmudrii
     privacy: closed
     repos:
-      tejolote: admin
-  tejolote-maintainers:
-    description: write access to tejolote
+      publishing-bot: write
+  repo-infra-admins:
+    description: Admin access to the repo-infra repo
     members:
+    - BenTheElder
     - cpanato
-    - jeremyrickard
     - justaugustus
+    - mikedanese
     - puerco
     - saschagrunert
     privacy: closed
     repos:
-      tejolote: write
-  testgrid-json-exporter-admins:
-    description: admin access to testgrid-json-exporter
+      repo-infra: admin
+  repo-infra-maintainers:
+    description: Write access to the repo-infra repo
     members:
+    - BenTheElder
     - cpanato
-    - jeremyrickard
     - justaugustus
+    - mikedanese
     - puerco
     - saschagrunert
+    - Verolop
+    - xmudrii
     privacy: closed
     repos:
-      testgrid-json-exporter: admin
-  testgrid-json-exporter-maintainers:
-    description: write access to testgrid-json-exporter
+      repo-infra: write
+  sig-release:
+    description: SIG Release members. Explicitly lists SIG Release Chairs,
+      Technical Leads, Program Managers, and any active SIG contributors that
+      are not already members of a nested team.
+    maintainers:
+    - mrbobbytables
+    - nikhita
+    - palnabarun
+    - Priyankasaggu11929
     members:
-    - cpanato
-    - jeremyrickard
-    - justaugustus
-    - puerco
-    - saschagrunert
+    - BenTheElder
+    - castrojo
+    - cici37
+    - cpanato # Technical Lead
+    - dims
+    - gracenng
+    - ixdy
+    - JamesLaverack
+    - jberkus
+    - jdumars
+    - jeefy
+    - jeremyrickard # Technical Lead
+    - justaugustus # Chair
+    - katcosgrove
+    - leonardpahlke
+    - liggitt
+    - puerco # Technical Lead
+    - reylejano
+    - salaxander
+    - saschagrunert # Chair
+    - savitharaghunathan
+    - spiffxp
+    - tpepper
     privacy: closed
-    repos:
-      testgrid-json-exporter: write
-  zeitgeist-admins:
-    description: admin access to zeitgeist
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      zeitgeist: admin
-  zeitgeist-maintainers:
-    description: write access to zeitgeist
-    members:
-    - cpanato # subproject owner
-    - jeremyrickard # subproject owner
-    - justaugustus # subproject owner
-    - Pluies
-    - puerco # subproject owner
-    - saschagrunert # subproject owner
-    privacy: closed
-    repos:
-      zeitgeist: write
+    teams:
+      release-engineering:
+        description: Members of the Release Engineering subproject, including
+          Release Managers, Release Manager Associates, and Build Admins.
+        maintainers:
+        - palnabarun # Release Manager
+        members:
+        - ameukam # Release Manager Associate
+        - cici37 # Release Manager
+        - cpanato # subproject owner / Release Manager
+        - gracenng # Release Manager Associate
+        - jeremyrickard # subproject owner / Release Manager
+        - jimangel # Release Manager Associate / 1.32 Release Manager
+        - jrsapi # Release Manager Associate
+        - justaugustus # subproject owner / Release Manager
+        - marosset # Release Manager Associate
+        - mehabhalodiya # Release Manager Associate
+        - mickeyboxell # 1.32 Release Manager Shadow
+        - puerco # subproject owner / Release Manager
+        - ramrodo # Release Manager Associate
+        - salaxander # Release Manager Associate
+        - saschagrunert # subproject owner / Release Manager
+        - Verolop # subproject owner / Release Manager
+        - xmudrii # Release Manager
+        privacy: closed
+        repos:
+          release: triage
+          sig-release: triage
+        teams:
+          release-managers:
+            description: People actively pushing Kubernetes releases. Gives
+              admin access to repos where branches must be created and write
+              access to ones where label/PR management is needed. Remove users
+              who are not actively doing this job.
+            maintainers:
+            - palnabarun
+            members:
+            - cici37
+            - cpanato
+            - jeremyrickard
+            - justaugustus
+            - k8s-release-robot
+            - puerco
+            - saschagrunert
+            - Verolop
+            - xmudrii
+            privacy: closed
+            previously:
+            - kubernetes-release-managers
+            repos:
+              kubernetes: admin
+              release: write
+              sig-release: write
+      release-team:
+        description: Members of the current Release Team and subproject owners.
+        maintainers:
+        - palnabarun # subproject owner (1.21 RT Lead)
+        - Priyankasaggu11929 # subproject owner (1.29 RT Lead)
+        members:
+        - cpanato # subproject owner / Technical Lead
+        - fsmunoz # 1.32 Release Lead
+        - gracenng # subproject owner (1.28 RT Lead)
+        - jameslaverack # subproject owner (1.24 RT Lead)
+        - jeremyrickard # subproject owner / Technical Lead
+        - jimangel # 1.32 RT Branch Manager
+        - justaugustus # subproject owner / Chair
+        - katcosgrove # 1.30 Lead / 1.32 EA
+        - leonardpahlke # subproject owner (1.26 RT Lead)
+        - mickeyboxell # 1.32 Release Manager Shadow
+        - puerco # subproject owner / Technical Lead
+        - reylejano # subproject owner (1.23 RT Lead)
+        - salaxander # subproject owner (1.27 RT Lead)
+        - saschagrunert # subproject owner / Chair
+        - savitharaghunathan # subproject owner (1.22 RT Lead)
+        - tjons # 1.32 Enhancements Lead
+        - Verolop # Release Manager
+        - xmudrii # Release Manager
+        privacy: closed
+        teams:
+          release-team-release-signal:
+            description: Members of the Release Signal team for the current release
+              cycle.
+            members:
+            - drewhagen # 1.32 Release Signal Lead
+            privacy: closed
+          release-team-docs:
+            description: Members of the Docs team for the current release cycle.
+            members:
+            - chanieljdan # 1.32 Docs Lead
+            privacy: closed
+          release-team-comms:
+            description: Members of the Comms team for the current release cycle.
+            members:
+            - mbianchidev # 1.32 Comms Lead
+            - edithturn # 1.32 Comms Shadow
+            - rashansmith # 1.32 Comms Shadow
+            - rytswd # 1.32 Comms Shadow
+            - wrkode # 1.32 Comms Shadow
+            privacy: closed
+          release-team-enhancements:
+            description: Members of the Enhancments team for the current release
+              cycle.
+            members:
+            - tjons # 1.32 Enhancements Lead
+            privacy: closed
+          release-team-release-notes:
+            description: Members of the Release Notes team for the current release
+              cycle.
+            members:
+            - satyampsoni # 1.32 Release Notes Lead
+            privacy: closed
+          release-team-leads:
+            description: Release Team Leads for the current Kubernetes release
+              cycle. Grants write access to kubernetes/kubernetes,
+              kubernetes/release, and kubernetes/sig-release, and can be used
+              as a notification group. Remove org members who are not current
+              Release Team Leads.
+            maintainers:
+            - Priyankasaggu11929 # 1.31 Release EA
+            members:
+            - fsmunoz # 1.32 Release Lead
+            - jimangel # 1.32 Release Branch Manager
+            - katcosgrove  # 1.32 Release EA
+            - npolshakova # 1.32 Release Lead shadow
+            - salehsedghpour # 1.32 Release Lead Shadow
+            - sreeram-venkitesh # 1.32 Release Lead Shadow
+            - Vyom-Yadav # 1.32 Release Lead Shadow
+            privacy: closed
+            repos:
+              kubernetes: write
+              release: triage
+              sig-release: write
+      sig-release-admins:
+        description: Admins for SIG Release repositories
+        members:
+        - cpanato # Technical Lead
+        - jeremyrickard # Chair
+        - justaugustus # Chair
+        - puerco # Technical Lead
+        - saschagrunert # Chair
+        - Verolop # Technical Lead
+        privacy: closed
+        repos:
+          release: admin
+          sig-release: admin
+      sig-release-leads:
+        description: |
+          Chairs, Technical Leads, and Program Managers for SIG Release
+        members:
+        - cpanato # Technical Lead
+        - jeremyrickard # Chair
+        - justaugustus # Chair
+        - puerco # Technical Lead
+        - saschagrunert # Chair
+        - Verolop # Technical Lead
+        privacy: closed
+      sig-release-pms:
+        description: |
+          Grants access to maintain SIG Release project boards
+        members:
+        - cpanato # Technical Lead
+        - jeremyrickard # Chair
+        - justaugustus # Chair
+        - puerco # Technical Lead
+        - saschagrunert # Chair
+        - Verolop # Technical Lead
+        privacy: closed
+        repos:
+          release: triage
+          sig-release: maintain
